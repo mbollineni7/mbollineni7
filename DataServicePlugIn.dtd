@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT DataServicePlugIns (DomainObject*)>
+<!ELEMENT DomainObject (Update*, Insert*, Delete*)>
+<!ATTLIST DomainObject
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT Insert (Before?, After?)>
+<!ELEMENT Update (Before?, After?)>
+<!ELEMENT Delete (Before?, After?)>
+
+<!ELEMENT After (add*)>
+<!ELEMENT Before (add*)>
+
+<!ELEMENT add EMPTY>
+<!ATTLIST add
+    plugin CDATA #REQUIRED
+>

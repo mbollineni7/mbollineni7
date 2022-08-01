@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by Shibu Thomas (DSHS) -->
+<Batch xmlns="http://tempuri.org/">
+  <Header>
+    <TransactionCode Type="N" Length="2" CareFieldName="Trans" Required="Y">
+      <EightyByteFormat>4</EightyByteFormat>
+      <ExtendedFormat>0</ExtendedFormat>
+	  <XmlFormat>LARLastName</XmlFormat>
+    </TransactionCode>
+    <ComponentCode Type="N" Length="3" CareFieldName="Comp" Required="Y">
+      <EightyByteFormat>0</EightyByteFormat>
+      <ExtendedFormat>2</ExtendedFormat>
+    </ComponentCode>
+    <LocalCaseNumber Type="A" Length="10" CareFieldName="Case" Required="Y">
+      <EightyByteFormat>30</EightyByteFormat>
+      <ExtendedFormat>5</ExtendedFormat>
+    </LocalCaseNumber>
+    <BatchNumber Type="A" Length="2" CareFieldName="Batch_No" Required="Y">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>15</ExtendedFormat>
+    </BatchNumber>
+    <TransactionEnterDate Type="D" Length="8" CareFieldName="Trans_Enter_Date" Required="Y">
+      <EightyByteFormat>17</EightyByteFormat>
+      <ExtendedFormat>17</ExtendedFormat>
+    </TransactionEnterDate>
+    <UserID Type="A" Length="5" CareFieldName="User_ID" Required="Y">
+      <EightyByteFormat>25</EightyByteFormat>
+      <ExtendedFormat>25</ExtendedFormat>
+    </UserID>
+    <LogicalTransactionNumber Type="N" Length="6" CareFieldName="Log_Trans_No" Required="Y">
+      <EightyByteFormat>7</EightyByteFormat>
+      <ExtendedFormat>30</ExtendedFormat>
+    </LogicalTransactionNumber>
+    <TransactionFormatVersion Type="A" Length="1" CareFieldName="Trans_Ver" Required="Y">
+      <EightyByteFormat>6</EightyByteFormat>
+      <ExtendedFormat>36</ExtendedFormat>
+    </TransactionFormatVersion>
+    <CareID Type="A" Length="10" CareFieldName="Care_ID" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>37</ExtendedFormat>
+    </CareID>
+    <LocationNum Type="A" Length="14" CareFieldName="TXN" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>47</ExtendedFormat>
+    </LocationNum>
+    <CMBHSKey Type="A" Length="14" CareFieldName="CMBHS" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>61</ExtendedFormat>
+    </CMBHSKey>
+    <DiagnosisSeq Type="A" Length="14" CareFieldName="RECN" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>75</ExtendedFormat>
+    </DiagnosisSeq>
+    <CMBHSSeq Type="A" Length="14" CareFieldName="CMBHS_SQ" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>89</ExtendedFormat>
+    </CMBHSSeq>
+    <AddOrChange Type="A" Length="1" CareFieldName="AC" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>103</ExtendedFormat>
+    </AddOrChange>
+  </Header>
+  <TrailRecord>
+    <TrailTransaction Type="A" Length="2" CareFieldName="TL_TRANS" Required="Y">
+      <ExtendedFormat>0</ExtendedFormat>
+    </TrailTransaction>
+    <TrailRecordCount Type="A" Length="6" CareFieldName="TL_CNT" Required="Y">
+      <ExtendedFormat>3</ExtendedFormat>
+    </TrailRecordCount>
+    <TrailRecordName Type="A" Length="20" CareFieldName="TL_NAME" Required="Y">
+      <ExtendedFormat>10</ExtendedFormat>
+    </TrailRecordName>
+    <TrailDate Type="A" Length="8" CareFieldName="TL_DATE" Required="Y">
+      <ExtendedFormat>31</ExtendedFormat>
+    </TrailDate>
+  </TrailRecord>
+  <Details>
+    <LastName Type="A" RecordNumber="1" Length="16" CareFieldName="LastNm" Required="Y">
+      <EightyByteFormat>40</EightyByteFormat>
+      <ExtendedFormat>125</ExtendedFormat>
+    </LastName>
+    <FirstName Type="A" RecordNumber="1" Length="11" CareFieldName="FirstNm" Required="Y">
+      <EightyByteFormat>56</EightyByteFormat>
+      <ExtendedFormat>141</ExtendedFormat>
+    </FirstName>
+    <EffectiveDateOfChange Type="D" RecordNumber="1" Length="8" CareFieldName="Chg_Eff_Dt" Required="N">
+      <EightyByteFormat>67</EightyByteFormat>
+      <ExtendedFormat>152</ExtendedFormat>
+    </EffectiveDateOfChange>
+    <NewLastName Type="A" RecordNumber="2" Length="16" CareFieldName="LastNm" Required="Y">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>160</ExtendedFormat>
+    </NewLastName>
+    <Suffix Type="A" RecordNumber="2" Length="3" CareFieldName="Last_Suf" Required="N">
+      <EightyByteFormat>31</EightyByteFormat>
+      <ExtendedFormat>177</ExtendedFormat>
+    </Suffix>
+    <NewFirstName Type="A" RecordNumber="2" Length="11" CareFieldName="FirstNm" Required="Y">
+      <EightyByteFormat>34</EightyByteFormat>
+      <ExtendedFormat>181</ExtendedFormat>
+    </NewFirstName>
+    <MiddleName Type="A" RecordNumber="2" Length="11" CareFieldName="MidNm" Required="N">
+      <EightyByteFormat>45</EightyByteFormat>
+      <ExtendedFormat>193</ExtendedFormat>
+    </MiddleName>
+    <Sex Type="A" RecordNumber="2" Length="1" CareFieldName="Sex" Required="Y">
+      <EightyByteFormat>55</EightyByteFormat>
+      <ExtendedFormat>204</ExtendedFormat>
+    </Sex>
+    <Race Type="A" RecordNumber="2" Length="1" CareFieldName="Ethnic" Required="Y">
+      <EightyByteFormat>56</EightyByteFormat>
+      <ExtendedFormat>206</ExtendedFormat>
+    </Race>
+    <BirthDate Type="D" RecordNumber="2" Length="8" CareFieldName="Birth_Dt" Required="Y">
+      <EightyByteFormat>57</EightyByteFormat>
+      <ExtendedFormat>208</ExtendedFormat>
+    </BirthDate>
+    <SSN Type="A" RecordNumber="2" Length="9" CareFieldName="SSN" Required="N">
+      <EightyByteFormat>65</EightyByteFormat>
+      <ExtendedFormat>217</ExtendedFormat>
+    </SSN>
+    <PresentingProblem Type="N" RecordNumber="2" Length="1" CareFieldName="Pres_Prob" Required="N">
+      <EightyByteFormat>74</EightyByteFormat>
+      <ExtendedFormat>227</ExtendedFormat>
+    </PresentingProblem>
+    <ProfileDate Type="D" RecordNumber="3" Length="8" CareFieldName="Eff_Dt" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>229</ExtendedFormat>
+    </ProfileDate>
+    <ProfileTime Type="T" RecordNumber="3" Length="4" CareFieldName="Eff_Tm" Required="N">
+      <EightyByteFormat>23</EightyByteFormat>
+      <ExtendedFormat>238</ExtendedFormat>
+    </ProfileTime>
+    <AddressLine1 Type="A" RecordNumber="3" Length="25" CareFieldName="Street" Required="Y">
+      <EightyByteFormat>27</EightyByteFormat>
+      <ExtendedFormat>243</ExtendedFormat>
+    </AddressLine1>
+    <City Type="A" RecordNumber="3" Length="20" CareFieldName="City" Required="Y">
+      <EightyByteFormat>52</EightyByteFormat>
+      <ExtendedFormat>269</ExtendedFormat>
+    </City>
+    <State Type="A" RecordNumber="3" Length="2" CareFieldName="State" Required="Y">
+      <EightyByteFormat>72</EightyByteFormat>
+      <ExtendedFormat>290</ExtendedFormat>
+    </State>
+    <Zip Type="N" RecordNumber="3" Length="5" CareFieldName="Zip" Required="Y">
+      <EightyByteFormat>74</EightyByteFormat>
+      <ExtendedFormat>293</ExtendedFormat>
+    </Zip>
+    <ZipSuf Type="N" RecordNumber="4" Length="4" CareFieldName="ZipSuf" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>299</ExtendedFormat>
+    </ZipSuf>
+    <FederalEthnicity Type="A" RecordNumber="4" Length="1" CareFieldName="Fed_Eth" Required="Y">
+      <EightyByteFormat>19</EightyByteFormat>
+      <ExtendedFormat>304</ExtendedFormat>
+    </FederalEthnicity>
+    <MaritalStatus Type="N" RecordNumber="4" Length="1" CareFieldName="Mar_Stat" Required="Y">
+      <EightyByteFormat>22</EightyByteFormat>
+      <ExtendedFormat>308</ExtendedFormat>
+    </MaritalStatus>
+    <AnnualIncome Type="N" RecordNumber="4" Length="10" CareFieldName="Gross_Inc" Required="N">
+      <EightyByteFormat>23</EightyByteFormat>
+      <ExtendedFormat>310</ExtendedFormat>
+    </AnnualIncome>
+    <FamilySize Type="N" RecordNumber="4" Length="2" CareFieldName="Fam_Size" Required="N">
+      <EightyByteFormat>33</EightyByteFormat>
+      <ExtendedFormat>321</ExtendedFormat>
+    </FamilySize>
+    <PrimaryCorrespondentName Type="A" RecordNumber="4" Length="25" CareFieldName="Prim_Cor_Nm" Required="Y">
+      <EightyByteFormat>35</EightyByteFormat>
+      <ExtendedFormat>324</ExtendedFormat>
+    </PrimaryCorrespondentName>
+    <PrimaryCorrespondentAddressLine1 Type="A" RecordNumber="5" Length="25" CareFieldName="Prim_Cor_Street" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>350</ExtendedFormat>
+    </PrimaryCorrespondentAddressLine1>
+    <PrimaryCorrespondentCity Type="A" RecordNumber="5" Length="20" CareFieldName="Prim_Cor_City" Required="N">
+      <EightyByteFormat>40</EightyByteFormat>
+      <ExtendedFormat>376</ExtendedFormat>
+    </PrimaryCorrespondentCity>
+    <PrimaryCorrespondentState Type="A" RecordNumber="5" Length="2" CareFieldName="Prim_Cor_State" Required="N">
+      <EightyByteFormat>60</EightyByteFormat>
+      <ExtendedFormat>397</ExtendedFormat>
+    </PrimaryCorrespondentState>
+    <PrimaryCorrespondentZip Type="N" RecordNumber="5" Length="5" CareFieldName="Prim_Cor_Zip" Required="N">
+      <EightyByteFormat>63</EightyByteFormat>
+      <ExtendedFormat>400</ExtendedFormat>
+    </PrimaryCorrespondentZip>
+    <PrimaryCorrespondentZipSuffix Type="N" RecordNumber="5" Length="4" CareFieldName="Prim_Cor_ZipSuf" Required="N">
+      <EightyByteFormat>67</EightyByteFormat>
+      <ExtendedFormat>406</ExtendedFormat>
+    </PrimaryCorrespondentZipSuffix>
+    <PrimaryCorrespondentPhone Type="N" RecordNumber="6" Length="10" CareFieldName="Prim_Cor_Phone" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>412</ExtendedFormat>
+    </PrimaryCorrespondentPhone>
+    <PrimaryCorrespondentContactType Type="N" RecordNumber="6" Length="2" CareFieldName="Prim_Cor_Relation" Required="N">
+      <EightyByteFormat>25</EightyByteFormat>
+      <ExtendedFormat>422</ExtendedFormat>
+    </PrimaryCorrespondentContactType>
+    <SecondaryCorrespondentName Type="A" RecordNumber="6" Length="25" CareFieldName="Sec_Cor_Nm" Required="N">
+      <EightyByteFormat>27</EightyByteFormat>
+      <ExtendedFormat>425</ExtendedFormat>
+    </SecondaryCorrespondentName>
+    <SecondaryCorrespondentAddressLine1 Type="A" RecordNumber="6" Length="25" CareFieldName="Sec_Cor_Street" Required="N">
+      <EightyByteFormat>52</EightyByteFormat>
+      <ExtendedFormat>451</ExtendedFormat>
+    </SecondaryCorrespondentAddressLine1>
+    <SecondaryCorrespondentCity Type="A" RecordNumber="7" Length="20" CareFieldName="Sec_Cor_City" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>477</ExtendedFormat>
+    </SecondaryCorrespondentCity>
+    <SecondaryCorrespondentState Type="A" RecordNumber="7" Length="2" CareFieldName="Sec_Cor_State" Required="N">
+      <EightyByteFormat>35</EightyByteFormat>
+      <ExtendedFormat>498</ExtendedFormat>
+    </SecondaryCorrespondentState>
+    <SecondaryCorrespondentZip Type="N" RecordNumber="7" Length="5" CareFieldName="Sec_Cor_Zip" Required="N">
+      <EightyByteFormat>37</EightyByteFormat>
+      <ExtendedFormat>501</ExtendedFormat>
+    </SecondaryCorrespondentZip>
+    <SecondaryCorrespondentZipSuffix Type="N" RecordNumber="7" Length="4" CareFieldName="Sec_Cor_ZipSuf" Required="N">
+      <EightyByteFormat>42</EightyByteFormat>
+      <ExtendedFormat>507</ExtendedFormat>
+    </SecondaryCorrespondentZipSuffix>
+    <SecondaryCorrespondentPhone Type="N" RecordNumber="7" Length="10" CareFieldName="Sec_Cor_Phone" Required="N">
+      <EightyByteFormat>46</EightyByteFormat>
+      <ExtendedFormat>512</ExtendedFormat>
+    </SecondaryCorrespondentPhone>
+    <SecondaryCorrespondentContactType Type="N" RecordNumber="7" Length="2" CareFieldName="Sec_Cor_Relation" Required="N">
+      <EightyByteFormat>56</EightyByteFormat>
+      <ExtendedFormat>523</ExtendedFormat>
+    </SecondaryCorrespondentContactType>
+    <LegalStatus Type="N" RecordNumber="7" Length="1" CareFieldName="Leg_Stat" Required="N">
+      <EightyByteFormat>58</EightyByteFormat>
+      <ExtendedFormat>526</ExtendedFormat>
+    </LegalStatus>
+    <CPFundSource Type="A" RecordNumber="7" Length="2" CareFieldName="CP_Fund_Src" Required="N">
+      <EightyByteFormat>59</EightyByteFormat>
+      <ExtendedFormat>528</ExtendedFormat>
+    </CPFundSource>
+    <TypePlace Type="A" RecordNumber="8" Length="2" CareFieldName="Type_Place" Required="N">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>531</ExtendedFormat>
+    </TypePlace>
+    <RecipientNumber Type="A" RecordNumber="8" Length="9" CareFieldName="Recip_No" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <ExtendedFormat>534</ExtendedFormat>
+    </RecipientNumber>
+    <HICNumber Type="A" RecordNumber="8" Length="12" CareFieldName="HIC_No" Required="N">
+      <EightyByteFormat>24</EightyByteFormat>
+      <ExtendedFormat>544</ExtendedFormat>
+    </HICNumber>
+    <EffectiveDate Type="D" RecordNumber="8" Length="8" CareFieldName="First_Known_Date" Required="N">
+      <EightyByteFormat>36</EightyByteFormat>
+      <ExtendedFormat>557</ExtendedFormat>
+    </EffectiveDate>
+    <EndDate Type="D" RecordNumber="8" Length="8" CareFieldName="End_Dt" Required="N">
+      <EightyByteFormat>44</EightyByteFormat>
+      <ExtendedFormat>566</ExtendedFormat>
+    </EndDate>
+    <Filler Type="A" RecordNumber="8" Length="1" CareFieldName="Fil" Required="N">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>574</ExtendedFormat>
+    </Filler>
+    <ClientPrimaryPhone Type="A" RecordNumber="8" Length="10" CareFieldName="Client_Phone" Required="N">
+      <EightyByteFormat>NA</EightyByteFormat>
+      <ExtendedFormat>575</ExtendedFormat>
+    </ClientPrimaryPhone>
+  </Details>
+</Batch>

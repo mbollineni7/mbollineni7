@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DataServicePlugIns SYSTEM "DataServicePlugIn.dtd">
+<DataServicePlugIns>
+  <!-- This is just here to provide an example
+  <DomainObject id="NSEnrollmentInfo">
+    <Insert>
+      <Before>
+        <add plugin="DSHS.CMBHS.DataService.PlugIns.NorthStarEnrollmentPlugIn, DSHS.CMBHS.DataService"/>
+      </Before>
+    </Insert>
+    <Update>
+      <Before>
+        <add plugin="DSHS.CMBHS.DataService.PlugIns.NorthStarEnrollmentPlugIn, DSHS.CMBHS.DataService"/>
+      </Before>
+    </Update>
+    <Delete>
+      <Before>
+        <add plugin="DSHS.CMBHS.DataService.PlugIns.NorthStarEnrollmentPlugIn, DSHS.CMBHS.DataService"/>
+      </Before>
+    </Delete>
+  </DomainObject>
+  -->
+</DataServicePlugIns>

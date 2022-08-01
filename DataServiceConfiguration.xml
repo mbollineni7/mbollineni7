@@ -1,0 +1,21 @@
+<?xml version="1.0"	encoding="UTF-8"?>
+<!-- edited	with XMLSPY	v5 rel.	4 U	(http://www.xmlspy.com)	by C. Ming Lu (J.J.E. Leasing LLC) -->
+<Mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:noNamespaceSchemaLocation="DataService.xsd">
+	<Operations>
+		<add key="Delete"					        value="DSHS.SNF.DataService.Operation.DeleteOperation,DSHS.SNF.DataService"/>
+		<add key="DeleteWhere"  	        value="DSHS.SNF.DataService.Operation.DeleteWhereOperation,DSHS.SNF.DataService"/>
+		<add key="Fetch"					        value="DSHS.SNF.DataService.Operation.FetchOperation,DSHS.SNF.DataService"/>
+		<add key="GetOptions"			        value="DSHS.SNF.DataService.Operation.GetOptionsOperation,DSHS.SNF.DataService"/>
+		<add key="Insert"					        value="DSHS.SNF.DataService.Operation.InsertOperation,DSHS.SNF.DataService"/>
+		<add key="Query"					        value="DSHS.SNF.DataService.Operation.QueryOperation,DSHS.SNF.DataService"/>
+		<add key="Update"					        value="DSHS.SNF.DataService.Operation.UpdateOperation,DSHS.SNF.DataService"/>
+		<add key="Batch"					        value="DSHS.SNF.DataService.Operation.BatchOperation,DSHS.SNF.DataService"/>
+		<add key="TransactionlessBatch"		value="DSHS.SNF.DataService.Operation.TransactionlessBatchOperation,DSHS.SNF.DataService"/>
+	</Operations>
+	<DataServices>
+		<Assembly name="DSHS.CMBHS.Model">
+			<NameSpace name="DSHS.CMBHS.Model">
+			</NameSpace>
+		</Assembly>
+	</DataServices>
+</Mappings>

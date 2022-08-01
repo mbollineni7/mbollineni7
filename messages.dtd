@@ -1,0 +1,14 @@
+<!ELEMENT Messages (UserMessages)>
+<!ELEMENT UserMessages (Message*)>
+<!ELEMENT Message (#PCDATA)>
+<!ATTLIST Message code CDATA #REQUIRED>
+<!-- 
+  Valid types are:
+    rule  - Business Rule Violation
+    help  - Help Message
+    warning  - Warning Message
+    information  - Informational Message
+    error - Error Message
+-->
+<!ATTLIST Message type CDATA #REQUIRED>
+<!ATTLIST Message scope CDATA "client/server">

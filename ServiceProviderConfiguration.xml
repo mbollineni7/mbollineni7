@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ServiceProviders>
+  <ServiceProvider name="ConnectionManager" className="DSHS.SNF.DataService.Connection.ConnectionManager, DSHS.SNF.DataService" />
+  <ServiceProvider name="ManagedCodeSecurity" className="DSHS.CMBHS.ServiceProvider.Security.SecurityService, DSHS.CMBHS.ServiceProvider" />
+  <!-- DataProvider Services -->
+  <ServiceProvider name="CommonProvider" className="DSHS.CMBHS.ServiceProvider.Provider.CommonProvider, DSHS.CMBHS.ServiceProvider" />
+  <ServiceProvider name="SetupStaffProvider" className="DSHS.CMBHS.ServiceProvider.Provider.SetupStaffProvider, DSHS.CMBHS.ServiceProvider" />
+  <ServiceProvider name="ProviderSetupProvider" className="DSHS.CMBHS.ServiceProvider.Provider.ProviderSetupProvider, DSHS.CMBHS.ServiceProvider" />
+</ServiceProviders>

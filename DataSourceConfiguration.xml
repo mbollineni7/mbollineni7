@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSources>
+  <!--
+    encryptedAppName="cmbhs-dev1-11g"
+    encryptedAppName="cmbhs-dev2-11g"
+    encryptedAppName="cmbhs-dev3-11g"
+    encryptedAppName="cmbhs-test1-11g"
+    encryptedAppName="cmbhs-test2-11g"
+    encryptedAppName="cmbhs-test3-11g"
+    encryptedAppName="cmbhs-last1-11g"
+    encryptedAppName="cmbhs-last2-11g"
+  -->
+  <DataSource
+    default="true"
+    name="Oracle"
+    targetDatabaseType="Oracle"
+    connectionMethod="Oracle"
+    encrypted="true"
+    encryptedAppName="cmbhs-dev3-11g"
+    keyFilterVisitorClassName="DSHS.SNF.DataService.Filter.OracleQueryKeyFilterVisitor, DSHS.SNF.DataService"
+    argsFilterVisitorClassName="DSHS.SNF.DataService.Filter.OracleQueryArgsFilterVisitor, DSHS.SNF.DataService" />
+</DataSources>

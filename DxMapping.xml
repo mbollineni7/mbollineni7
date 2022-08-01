@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by Shibu Thomas (DSHS) -->
+<Batch xmlns="http://tempuri.org/">
+ <Header>
+		<TransactionCode Type="N" Length="2" CareFieldName="Trans" Required="Y">
+      <EightyByteFormat>4</EightyByteFormat>
+			<CareExtendedFormat>0</CareExtendedFormat>
+		</TransactionCode>
+		<ComponentCode Type="N" Length="3" CareFieldName="Comp" Required="Y">
+      <EightyByteFormat>0</EightyByteFormat>
+			<CareExtendedFormat>2</CareExtendedFormat>
+		</ComponentCode>
+   <RecordType Type="N" Length="1" CareFieldName="Rec_Type" Required="Y">
+     <EightyByteFormat>3</EightyByteFormat>
+     <CareExtendedFormat>NA</CareExtendedFormat>
+   </RecordType>
+		<LocalCaseNumber Type="A" Length="10" CareFieldName="Case" Required="Y">
+      <EightyByteFormat>30</EightyByteFormat>
+			<CareExtendedFormat>5</CareExtendedFormat>
+		</LocalCaseNumber>
+		<BatchNumber Type="A" Length="2" CareFieldName="Batch_No" Required="Y">
+      <EightyByteFormat>15</EightyByteFormat>
+			<CareExtendedFormat>15</CareExtendedFormat>
+		</BatchNumber>
+		<TransactionEnterDate Type="D" Length="8" CareFieldName="Trans_Enter_Date" Required="Y">
+      <EightyByteFormat>17</EightyByteFormat>
+			<CareExtendedFormat>17</CareExtendedFormat>
+		</TransactionEnterDate>
+		<UserID Type="A" Length="5" CareFieldName="User_ID" Required="Y">
+      <EightyByteFormat>4</EightyByteFormat>
+			<CareExtendedFormat>25</CareExtendedFormat>
+		</UserID>
+		<LogicalTransactionNumber Type="N" Length="6" CareFieldName="Log_Trans_No" Required="Y">
+      <EightyByteFormat>7</EightyByteFormat>
+			<CareExtendedFormat>30</CareExtendedFormat>
+		</LogicalTransactionNumber>
+   <PhysicalTransactionNumber Type="N" Length="2" CareFieldName="Phy_Rec_No" Required="Y">
+     <EightyByteFormat>13</EightyByteFormat>
+     <CareExtendedFormat>NA</CareExtendedFormat>
+   </PhysicalTransactionNumber>
+   <BatchNumber Type="A" Length="2" CareFieldName="Batch_No" Required="Y">
+     <EightyByteFormat>15</EightyByteFormat>
+     <CareExtendedFormat>NA</CareExtendedFormat>
+   </BatchNumber>
+		<TransactionFormatVersion Type="A" Length="1" CareFieldName="Trans_Ver" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>36</CareExtendedFormat>
+		</TransactionFormatVersion>
+		<CareID Type="A" Length="10" CareFieldName="Care_ID" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>37</CareExtendedFormat>
+		</CareID>	
+		<LocationNum Type="A" Length="14" CareFieldName="TXN" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>47</CareExtendedFormat>
+		</LocationNum>		
+		<CMBHSKey Type="A" Length="14" CareFieldName="CMBHS" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>61</CareExtendedFormat>
+		</CMBHSKey>		
+		<DiagnosisSeq Type="A" Length="14" CareFieldName="RECN" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>75</CareExtendedFormat>
+		</DiagnosisSeq>		
+		<CMBHSSeq Type="A" Length="14" CareFieldName="CMBHS_SQ" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>89</CareExtendedFormat>
+		</CMBHSSeq>	
+		<AddOrChange Type="A" Length="1" CareFieldName="AC" Required="Y">
+      <EightyByteFormat>NA</EightyByteFormat>
+			<CareExtendedFormat>103</CareExtendedFormat>
+		</AddOrChange>	
+	</Header>
+  <TrailRecord>
+    <TrailTransaction Type="A" Length="2" CareFieldName="TL_TRANS" Required="Y">
+      <CareExtendedFormat>0</CareExtendedFormat>
+    </TrailTransaction>
+    <TrailRecordCount Type="A" Length="6" CareFieldName="TL_CNT" Required="Y">
+      <CareExtendedFormat>3</CareExtendedFormat>
+    </TrailRecordCount>
+    <TrailRecordName Type="A" Length="20" CareFieldName="TL_NAME" Required="Y">
+      <CareExtendedFormat>10</CareExtendedFormat>
+    </TrailRecordName>
+    <TrailDate Type="A" Length="8" CareFieldName="TL_DATE" Required="Y">
+      <CareExtendedFormat>31</CareExtendedFormat>
+    </TrailDate>
+  </TrailRecord>
+	<Details>
+    <CareId Type="A" RecordNumber="1" Length="10" CareFieldName="CASE" Required="Y">
+			<EightyByteFormat>30</EightyByteFormat>
+			<CareExtendedFormat>125</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</CareId>
+		<LastName Type="A" RecordNumber="1" Length="16" CareFieldName="LastNm" Required="Y">
+			<EightyByteFormat>50</EightyByteFormat>
+			<CareExtendedFormat>135</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</LastName>
+		<Suffix Type="A" RecordNumber="1" Length="3" CareFieldName="Last_Suf" Required="Y">
+			<EightyByteFormat>66</EightyByteFormat>
+			<CareExtendedFormat>151</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</Suffix>
+		<FirstName Type="A" RecordNumber="1" Length="11" CareFieldName="FirstNm" Required="Y">
+			<EightyByteFormat>69</EightyByteFormat>
+			<CareExtendedFormat>154</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</FirstName>
+		<MiddleName Type="A" RecordNumber="2" Length="10" CareFieldName="MidNm" Required="Y">
+			<EightyByteFormat>15</EightyByteFormat>
+			<CareExtendedFormat>165</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</MiddleName>
+		<EffectiveDate Type="A" RecordNumber="2" Length="8" CareFieldName="Eff_Dt" Required="N">
+			<EightyByteFormat>25</EightyByteFormat>
+			<CareExtendedFormat>175</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</EffectiveDate>
+		<EffectiveTime Type="A" RecordNumber="2" Length="4" CareFieldName="Form_Tm" Required="N">
+			<EightyByteFormat>33</EightyByteFormat>
+			<CareExtendedFormat>183</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</EffectiveTime>	
+		<DiagnosisReasonType Type="A" RecordNumber="2" Length="1" CareFieldName="Reason_Act" Required="Y">
+			<EightyByteFormat>37</EightyByteFormat>
+			<CareExtendedFormat>187</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</DiagnosisReasonType>
+		<PrincipalDiagnosisType Type="A" RecordNumber="2" Length="1" CareFieldName="Axis_Ind" Required="Y">
+			<EightyByteFormat>38</EightyByteFormat>
+			<CareExtendedFormat>188</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</PrincipalDiagnosisType>
+		<AxisILevel1 Type="A" RecordNumber="2" Length="7" CareFieldName="DSM11" Required="N">
+			<EightyByteFormat>39</EightyByteFormat>
+			<CareExtendedFormat Length="7">189</CareExtendedFormat>
+			<ProviderExtendedFormat>59</ProviderExtendedFormat>
+		</AxisILevel1>
+		<AxisILevel2 Type="A" RecordNumber="2" Length="7" CareFieldName="DSM12" Required="N">
+			<EightyByteFormat>46</EightyByteFormat>
+			<CareExtendedFormat Length="7">196</CareExtendedFormat>
+			<ProviderExtendedFormat>64</ProviderExtendedFormat>
+		</AxisILevel2>
+		<AxisILevel3 Type="A" RecordNumber="2" Length="7" CareFieldName="DSM13" Required="N">
+			<EightyByteFormat>53</EightyByteFormat>
+			<CareExtendedFormat Length="7">203</CareExtendedFormat>
+			<ProviderExtendedFormat>69</ProviderExtendedFormat>
+		</AxisILevel3>
+		<AxisILevel4 Type="A" RecordNumber="2" Length="7" CareFieldName="DSM14" Required="N">
+			<EightyByteFormat>60</EightyByteFormat>
+			<CareExtendedFormat Length="7">210</CareExtendedFormat>
+			<ProviderExtendedFormat>74</ProviderExtendedFormat>
+		</AxisILevel4>
+		<AxisILevel5 Type="A" RecordNumber="2" Length="7" CareFieldName="DSM15" Required="N">
+			<EightyByteFormat>67</EightyByteFormat>
+			<CareExtendedFormat Length="7">217</CareExtendedFormat>
+			<ProviderExtendedFormat>79</ProviderExtendedFormat>
+		</AxisILevel5>		
+		<AxisILevel6 Type="A" RecordNumber="3" Length="7" CareFieldName="DSM16" Required="N">
+			<EightyByteFormat>15</EightyByteFormat>
+			<CareExtendedFormat Length="7">224</CareExtendedFormat>
+			<ProviderExtendedFormat>84</ProviderExtendedFormat>
+		</AxisILevel6>
+		<AxisIILevel1 Type="A" RecordNumber="3" Length="7" CareFieldName="DSM21" Required="N">
+			<EightyByteFormat>22</EightyByteFormat>
+			<CareExtendedFormat Length="7">231</CareExtendedFormat>
+			<ProviderExtendedFormat>89</ProviderExtendedFormat>
+		</AxisIILevel1>
+		<AxisIILevel2 Type="A" RecordNumber="3" Length="7" CareFieldName="DSM22" Required="N">
+			<EightyByteFormat>29</EightyByteFormat>
+			<CareExtendedFormat Length="7">238</CareExtendedFormat>
+			<ProviderExtendedFormat>94</ProviderExtendedFormat>
+		</AxisIILevel2>
+		<AxisIILevel3 Type="A" RecordNumber="3" Length="7" CareFieldName="DSM23" Required="N">
+			<EightyByteFormat>36</EightyByteFormat>
+			<CareExtendedFormat Length="7">245</CareExtendedFormat>
+			<ProviderExtendedFormat>99</ProviderExtendedFormat>
+		</AxisIILevel3>
+		<AxisIILevel4 Type="A" RecordNumber="3" Length="7" CareFieldName="DSM24" Required="N">
+			<EightyByteFormat>43</EightyByteFormat>
+			<CareExtendedFormat Length="7">252</CareExtendedFormat>
+			<ProviderExtendedFormat>104</ProviderExtendedFormat>
+		</AxisIILevel4>
+		<AxisIIILevel1 Type="A" RecordNumber="5" Length="7" CareFieldName="ICD31" Required="N">
+			<EightyByteFormat>15</EightyByteFormat>
+			<CareExtendedFormat Length="7">259</CareExtendedFormat>
+			<ProviderExtendedFormat>109</ProviderExtendedFormat>
+		</AxisIIILevel1>
+		<AxisIIILevel2 Type="A" RecordNumber="5" Length="7" CareFieldName="ICD32" Required="N">
+			<EightyByteFormat>22</EightyByteFormat>
+			<CareExtendedFormat Length="7">266</CareExtendedFormat>
+			<ProviderExtendedFormat>114</ProviderExtendedFormat>
+		</AxisIIILevel2>
+		<AxisIIILevel3 Type="A" RecordNumber="5" Length="7" CareFieldName="ICD33" Required="N">
+			<EightyByteFormat>29</EightyByteFormat>
+			<CareExtendedFormat Length="7">273</CareExtendedFormat>
+			<ProviderExtendedFormat>119</ProviderExtendedFormat>
+		</AxisIIILevel3>
+		<AxisIIILevel4 Type="A" RecordNumber="5" Length="7" CareFieldName="ICD34" Required="N">
+			<EightyByteFormat>36</EightyByteFormat>
+			<CareExtendedFormat Length="7">280</CareExtendedFormat>
+			<ProviderExtendedFormat>124</ProviderExtendedFormat>
+		</AxisIIILevel4>
+		<AxisIIILevel5 Type="A" RecordNumber="5" Length="7" CareFieldName="ICD35" Required="N">
+			<EightyByteFormat>43</EightyByteFormat>
+			<CareExtendedFormat Length="7">287</CareExtendedFormat>
+			<ProviderExtendedFormat>129</ProviderExtendedFormat>
+		</AxisIIILevel5>		
+		<AxisIIILevel6 Type="A" RecordNumber="5" Length="7" CareFieldName="ICD36" Required="N">
+			<EightyByteFormat>50</EightyByteFormat>
+			<CareExtendedFormat Length="7">294</CareExtendedFormat>
+			<ProviderExtendedFormat>134</ProviderExtendedFormat>
+		</AxisIIILevel6>		
+		<AxisThreeDate Type="D" RecordNumber="5" Length="8" CareFieldName="AXIS3_Dt" Required="N">
+			<EightyByteFormat>57</EightyByteFormat>
+			<CareExtendedFormat>301</CareExtendedFormat>
+			<ProviderExtendedFormat>139</ProviderExtendedFormat>
+		</AxisThreeDate>
+		<AxisIV Type="A" RecordNumber="3" Length="9" CareFieldName="AXIS4" Required="N">
+			<EightyByteFormat>64</EightyByteFormat>
+			<CareExtendedFormat Length = "1">309</CareExtendedFormat>
+			<ProviderExtendedFormat>147</ProviderExtendedFormat>
+		</AxisIV>
+		<AxisV Type="A" RecordNumber="4" Length="2" CareFieldName="AXIS5_Cur" Required="N">
+			<EightyByteFormat>67</EightyByteFormat>
+			<CareExtendedFormat>378</CareExtendedFormat>
+			<ProviderExtendedFormat>156</ProviderExtendedFormat>
+		</AxisV>
+		<AxisVPrevious Type="A" RecordNumber="4" Length="2" CareFieldName="AXIS5_Prev" Required="N">
+			<EightyByteFormat>69</EightyByteFormat>
+			<CareExtendedFormat>380</CareExtendedFormat>
+			<ProviderExtendedFormat>158</ProviderExtendedFormat>
+		</AxisVPrevious>
+		<CurrentAdaptiveBehaviorLevel Type="A" RecordNumber="3" Length="1" CareFieldName="ABL_CUR" Required="N">
+			<EightyByteFormat>65</EightyByteFormat>
+			<CareExtendedFormat>311</CareExtendedFormat>
+			<ProviderExtendedFormat>160</ProviderExtendedFormat>
+		</CurrentAdaptiveBehaviorLevel>
+		<PotentialAdaptiveBehaviorLevel Type="A" RecordNumber="3" Length="1" CareFieldName="ABL_POT" Required="N">
+			<EightyByteFormat>66</EightyByteFormat>
+			<CareExtendedFormat>312</CareExtendedFormat>
+			<ProviderExtendedFormat>161</ProviderExtendedFormat>
+		</PotentialAdaptiveBehaviorLevel>
+		<PrimaryAAMD Type="A" RecordNumber="3" Length="3" CareFieldName="AAMD_PRIM" Required="N">
+			<EightyByteFormat>67</EightyByteFormat>
+			<CareExtendedFormat>313</CareExtendedFormat>			
+			<ProviderExtendedFormat>162</ProviderExtendedFormat>
+		</PrimaryAAMD>
+		<SecondaryAAMD Type="A" RecordNumber="3" Length="3" CareFieldName="AAMD_SEC" Required="N">
+			<EightyByteFormat>70</EightyByteFormat>
+			<CareExtendedFormat>316</CareExtendedFormat>			
+			<ProviderExtendedFormat>165</ProviderExtendedFormat>
+		</SecondaryAAMD>
+		<TertiaryAAMD Type="A" RecordNumber="3" Length="3" CareFieldName="AAMD_TERT" Required="N">
+			<EightyByteFormat>73</EightyByteFormat>
+			<CareExtendedFormat>319</CareExtendedFormat>			
+			<ProviderExtendedFormat>168</ProviderExtendedFormat>
+		</TertiaryAAMD>	
+		<GeneticComponent Type="A" RecordNumber="3" Length="2" CareFieldName="GEN_COMP" Required="N">
+			<EightyByteFormat>76</EightyByteFormat>
+			<CareExtendedFormat>322</CareExtendedFormat>			
+			<ProviderExtendedFormat>171</ProviderExtendedFormat>
+		</GeneticComponent>	
+		<CranialAnomaly Type="A" RecordNumber="3" Length="2" CareFieldName="CRAN_ANOM" Required="N">
+			<EightyByteFormat>78</EightyByteFormat>
+			<CareExtendedFormat>324</CareExtendedFormat>			
+			<ProviderExtendedFormat>173</ProviderExtendedFormat>
+		</CranialAnomaly>	
+		<SensoryImpairment Type="A" RecordNumber="4" Length="2" CareFieldName="SENS_IMPAIR" Required="N">
+			<EightyByteFormat>15</EightyByteFormat>
+			<CareExtendedFormat>326</CareExtendedFormat>			
+			<ProviderExtendedFormat>175</ProviderExtendedFormat>
+		</SensoryImpairment>	
+		<Perception Type="A" RecordNumber="4" Length="2" CareFieldName="PERCEPT" Required="N">
+			<EightyByteFormat>17</EightyByteFormat>
+			<CareExtendedFormat>328</CareExtendedFormat>			
+			<ProviderExtendedFormat>177</ProviderExtendedFormat>
+		</Perception>	
+		<ConvulsiveDisorder Type="A" RecordNumber="4" Length="2" CareFieldName="CONVULS_DIS" Required="N">
+			<EightyByteFormat>19</EightyByteFormat>
+			<CareExtendedFormat>330</CareExtendedFormat>			
+			<ProviderExtendedFormat>179</ProviderExtendedFormat>
+		</ConvulsiveDisorder>	
+		<PSYImpairement Type="A" RecordNumber="4" Length="2" CareFieldName="PSY_IMPAIR" Required="N">
+			<EightyByteFormat>21</EightyByteFormat>
+			<CareExtendedFormat>332</CareExtendedFormat>			
+			<ProviderExtendedFormat>181</ProviderExtendedFormat>
+		</PSYImpairement>
+		<MotorDysfunction Type="A" RecordNumber="4" Length="2" CareFieldName="MOTOR_DYS" Required="N">
+			<EightyByteFormat>23</EightyByteFormat>
+			<CareExtendedFormat>334</CareExtendedFormat>			
+			<ProviderExtendedFormat>184</ProviderExtendedFormat>
+		</MotorDysfunction>
+		<MotorLocation Type="A" RecordNumber="4" Length="1" CareFieldName="MOTOR_LOC" Required="N">
+			<EightyByteFormat>25</EightyByteFormat>
+			<CareExtendedFormat>336</CareExtendedFormat>			
+			<ProviderExtendedFormat>185</ProviderExtendedFormat>
+		</MotorLocation>
+		<MotorSeverity Type="A" RecordNumber="4" Length="1" CareFieldName="MOTOR_SEV" Required="N">
+			<EightyByteFormat>26</EightyByteFormat>
+			<CareExtendedFormat>337</CareExtendedFormat>			
+			<ProviderExtendedFormat>186</ProviderExtendedFormat>
+		</MotorSeverity>	
+		<AAMDDate Type="D" RecordNumber="4" Length="8" CareFieldName="AAMD_DT" Required="N">
+			<EightyByteFormat>27</EightyByteFormat>
+			<CareExtendedFormat>338</CareExtendedFormat>			
+			<ProviderExtendedFormat>187</ProviderExtendedFormat>
+		</AAMDDate>		
+		<DSMVersion Type="A" RecordNumber="4" Length="2" CareFieldName="AXIS12_VERS" Required="N">
+			<EightyByteFormat>63</EightyByteFormat>
+			<CareExtendedFormat>374</CareExtendedFormat>			
+			<ProviderExtendedFormat>195</ProviderExtendedFormat>
+		</DSMVersion>	
+		<ICDVersion Type="A" RecordNumber="4" Length="2" CareFieldName="AXIS3_VERS" Required="N">
+			<EightyByteFormat>65</EightyByteFormat>
+			<CareExtendedFormat>376</CareExtendedFormat>			
+			<ProviderExtendedFormat>196</ProviderExtendedFormat>
+		</ICDVersion>
+		<AAMDVersion Type="A" RecordNumber="4" Length="2" CareFieldName="AAMD_VERS" Required="N">
+			<EightyByteFormat>61</EightyByteFormat>
+			<CareExtendedFormat>372</CareExtendedFormat>			
+			<ProviderExtendedFormat>197</ProviderExtendedFormat>
+		</AAMDVersion>		
+		<IQScore Type="N" RecordNumber="4" Length="3" CareFieldName="IQ" Required="N">
+			<EightyByteFormat>35</EightyByteFormat>
+			<CareExtendedFormat>346</CareExtendedFormat>			
+			<ProviderExtendedFormat>199</ProviderExtendedFormat>
+		</IQScore>		
+		<IQTestDate Type="D" RecordNumber="4" Length="8" CareFieldName="IQ_TEST_DT" Required="N">
+			<EightyByteFormat>40</EightyByteFormat>
+			<CareExtendedFormat>351</CareExtendedFormat>			
+			<ProviderExtendedFormat>202</ProviderExtendedFormat>
+		</IQTestDate>
+		<IQTest Type="N" RecordNumber="4" Length="2" CareFieldName="IQ_TEST" Required="N">
+			<EightyByteFormat>38</EightyByteFormat>
+			<CareExtendedFormat>349</CareExtendedFormat>			
+			<ProviderExtendedFormat>210</ProviderExtendedFormat>
+		</IQTest>
+		<SQScore Type="N" RecordNumber="4" Length="3" CareFieldName="SQ" Required="N">
+			<EightyByteFormat>48</EightyByteFormat>
+			<CareExtendedFormat>359</CareExtendedFormat>			
+			<ProviderExtendedFormat>212</ProviderExtendedFormat>
+		</SQScore>		
+		<SQTestDate Type="D" RecordNumber="4" Length="8" CareFieldName="SQ_TEST_DT" Required="N">
+			<EightyByteFormat>53</EightyByteFormat>
+			<CareExtendedFormat>364</CareExtendedFormat>			
+			<ProviderExtendedFormat>215</ProviderExtendedFormat>
+		</SQTestDate>
+		<SQTest Type="N" RecordNumber="4" Length="2" CareFieldName="SQ_TEST" Required="N">
+			<EightyByteFormat>51</EightyByteFormat>
+			<CareExtendedFormat>362</CareExtendedFormat>			
+			<ProviderExtendedFormat>223</ProviderExtendedFormat>
+		</SQTest>
+		<AxisIVLevel2 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS41" Required="N">
+			<EightyByteFormat>71</EightyByteFormat>
+			<CareExtendedFormat>382</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel2>
+		<AxisIVLevel3 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS42" Required="N">
+			<EightyByteFormat>72</EightyByteFormat>
+			<CareExtendedFormat>383</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel3>
+		<AxisIVLevel4 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS43" Required="N">
+			<EightyByteFormat>73</EightyByteFormat>
+			<CareExtendedFormat>384</CareExtendedFormat>
+			<ProviderExtendedFormat>147</ProviderExtendedFormat>
+		</AxisIVLevel4>
+		<AxisIVLevel5 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS44" Required="N">
+			<EightyByteFormat>74</EightyByteFormat>
+			<CareExtendedFormat>385</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel5>
+		<AxisIVLevel6 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS45" Required="N">
+			<EightyByteFormat>75</EightyByteFormat>
+			<CareExtendedFormat>386</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel6>
+		<AxisIVLevel7 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS46" Required="N">
+			<EightyByteFormat>76</EightyByteFormat>
+			<CareExtendedFormat>387</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel7>
+		<AxisIVLevel8 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS47" Required="N">
+			<EightyByteFormat>77</EightyByteFormat>
+			<CareExtendedFormat>388</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel8>
+		<AxisIVLevel9 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS48" Required="N">
+			<EightyByteFormat>78</EightyByteFormat>
+			<CareExtendedFormat>389</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel9>
+		<AxisIVLevel10 Type="A" RecordNumber="4" Length="1" CareFieldName="AXIS49" Required="N">
+			<EightyByteFormat>79</EightyByteFormat>
+			<CareExtendedFormat>390</CareExtendedFormat>
+			<ProviderExtendedFormat>NA</ProviderExtendedFormat>
+		</AxisIVLevel10>
+    <BHOProviderID Type="A" RecordNumber="5" Length="6" CareFieldName="LOC_PROVIDER_ID" Required="N">
+      <EightyByteFormat>65</EightyByteFormat>
+      <CareExtendedFormat>391</CareExtendedFormat>
+      <ProviderExtendedFormat>NA</ProviderExtendedFormat>
+    </BHOProviderID>
+    <NPI Type="A" RecordNumber="6" Length="10" CareFieldName="NPI" Required="N">
+      <EightyByteFormat>15</EightyByteFormat>
+      <CareExtendedFormat>400</CareExtendedFormat>
+      <ProviderExtendedFormat>NA</ProviderExtendedFormat>
+    </NPI>
+    <VendorNumber Type="A" RecordNumber="6" Length="17" CareFieldName="VENDOR_NBR" Required="N">
+      <EightyByteFormat>25</EightyByteFormat>
+      <CareExtendedFormat>410</CareExtendedFormat>
+      <ProviderExtendedFormat>NA</ProviderExtendedFormat>
+    </VendorNumber>
+  </Details>
+</Batch>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by Shibu Thomas (DSHS) -->
+<Batch xmlns="http://tempuri.org/">
+  <Header>
+    <TransactionCode Type="N" Length="2" CareFieldName="Trans" Required="Y">
+      <ExtendedFormat>0</ExtendedFormat>
+    </TransactionCode>
+    <ComponentCode Type="N" Length="3" CareFieldName="Comp" Required="Y">
+      <ExtendedFormat>2</ExtendedFormat>
+    </ComponentCode>
+    <LocalCaseNumber Type="A" Length="10" CareFieldName="Case" Required="Y">
+      <ExtendedFormat>5</ExtendedFormat>
+    </LocalCaseNumber>
+    <BatchNumber Type="A" Length="2" CareFieldName="Batch_No" Required="Y">
+      <ExtendedFormat>15</ExtendedFormat>
+    </BatchNumber>
+    <TransactionEnterDate Type="D" Length="8" CareFieldName="Trans_Enter_Date" Required="Y">
+      <ExtendedFormat>17</ExtendedFormat>
+    </TransactionEnterDate>
+    <UserID Type="A" Length="5" CareFieldName="User_ID" Required="Y">
+      <ExtendedFormat>25</ExtendedFormat>
+    </UserID>
+    <LogicalTransactionNumber Type="N" Length="6" CareFieldName="Log_Trans_No" Required="Y">
+      <ExtendedFormat>30</ExtendedFormat>
+    </LogicalTransactionNumber>
+    <TransactionFormatVersion Type="A" Length="1" CareFieldName="Trans_Ver" Required="Y">
+      <ExtendedFormat>36</ExtendedFormat>
+    </TransactionFormatVersion>
+    <CareID Type="A" Length="10" CareFieldName="Care_ID" Required="Y">
+      <ExtendedFormat>37</ExtendedFormat>
+    </CareID>
+    <LocationNum Type="A" Length="14" CareFieldName="TXN" Required="Y">
+      <ExtendedFormat>47</ExtendedFormat>
+    </LocationNum>
+    <CMBHSKey Type="A" Length="14" CareFieldName="CMBHS" Required="Y">
+      <ExtendedFormat>61</ExtendedFormat>
+    </CMBHSKey>
+    <DiagnosisSeq Type="A" Length="14" CareFieldName="RECN" Required="Y">
+      <ExtendedFormat>75</ExtendedFormat>
+    </DiagnosisSeq>
+    <CMBHSSeq Type="A" Length="14" CareFieldName="CMBHS_SQ" Required="Y">
+      <ExtendedFormat>89</ExtendedFormat>
+    </CMBHSSeq>
+    <AddOrChange Type="A" Length="1" CareFieldName="AC" Required="Y">
+      <ExtendedFormat>103</ExtendedFormat>
+    </AddOrChange>
+  </Header>
+  <TrailRecord>
+    <TrailTransaction Type="A" Length="2" CareFieldName="TL_TRANS" Required="Y">
+      <ExtendedFormat>0</ExtendedFormat>
+    </TrailTransaction>
+    <TrailRecordCount Type="A" Length="6" CareFieldName="TL_CNT" Required="Y">
+      <ExtendedFormat>3</ExtendedFormat>
+    </TrailRecordCount>
+    <TrailRecordName Type="A" Length="20" CareFieldName="TL_NAME" Required="Y">
+      <ExtendedFormat>10</ExtendedFormat>
+    </TrailRecordName>
+    <TrailDate Type="A" Length="8" CareFieldName="TL_DATE" Required="Y">
+      <ExtendedFormat>31</ExtendedFormat>
+    </TrailDate>
+  </TrailRecord>
+  <Details>
+    <CAREId  Type="A"  Length="10" CareFieldName="ID" Required="Y">
+      <ExtendedFormat>125</ExtendedFormat>
+    </CAREId>
+    <LastName Type="A"  Length="16" CareFieldName="LastNm" Required="Y">
+      <ExtendedFormat>135</ExtendedFormat>
+    </LastName>
+    <Suffix Type="A"  Length="3" CareFieldName="Last_Suf" Required="N">
+      <ExtendedFormat>151</ExtendedFormat>
+    </Suffix>
+    <FirstName Type="A"  Length="11" CareFieldName="FirstNm" Required="Y">
+      <ExtendedFormat>154</ExtendedFormat>
+    </FirstName>
+    <MiddleName Type="A" Length="10" CareFieldName="MidNm" Required="Y">
+      <ExtendedFormat>165</ExtendedFormat>
+    </MiddleName>
+    <EffectiveDateOfChange Type="D" RecordNumber="1" Length="8" CareFieldName="Cnty_Chg_Eff_Dt" Required="Y">
+      <ExtendedFormat>175</ExtendedFormat>
+    </EffectiveDateOfChange>
+    <NewCounty Type="A" Length="3" CareFieldName="New_Cnty" Required="Y">
+      <ExtendedFormat>183</ExtendedFormat>
+    </NewCounty>
+    <OldCounty Type="A"  Length="3" CareFieldName="Old_Cnty" Required="Y">
+      <ExtendedFormat>186</ExtendedFormat>
+    </OldCounty>
+    <ChgFlag Type="A"  Length="1" CareFieldName="Chg_Coord" Required="N">
+      <ExtendedFormat>189</ExtendedFormat>
+    </ChgFlag>    
+  </Details>
+</Batch>
